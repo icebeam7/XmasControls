@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XmasControls.Controls.XmasSphereControl">
+  <ContentView.Content>
+      <StackLayout Margin="5" Spacing="0">
+            <Polygon Points="22,0 28,0 30,5 20,5" Fill="Gold"/>
+          
+            <Ellipse WidthRequest="50" HorizontalOptions="Start"
+                     HeightRequest="50" VerticalOptions="Start"/>
+
+            <StackLayout.GestureRecognizers>
+                <DragGestureRecognizer CanDrag="True" DragStarting="OnDrag"/>
+            </StackLayout.GestureRecognizers>
+          
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

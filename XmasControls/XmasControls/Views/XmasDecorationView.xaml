@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XmasControls.Views.XmasDecorationView"
+             xmlns:controls="clr-namespace:XmasControls.Controls">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <controls:XmasTreeControl>
+                <controls:XmasTreeControl.LeavesBrush>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Yellow"
+                                      Offset="0.4"/>
+                        <GradientStop Color="Orange"
+                                      Offset="1.0"/>
+                    </LinearGradientBrush>
+                </controls:XmasTreeControl.LeavesBrush>
+
+                <controls:XmasTreeControl.TrunkBrush>
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="#cdaa7d"
+                                      Offset="0.2"/>
+                        <GradientStop Color="#654321"
+                                      Offset="1.0"/>
+                    </LinearGradientBrush>
+                </controls:XmasTreeControl.TrunkBrush>
+            </controls:XmasTreeControl>
+
+            <StackLayout Orientation="Horizontal">
+                <controls:XmasSphereControl>
+                    <controls:XmasSphereControl.SphereBrush>
+                        <RadialGradientBrush>
+                            <GradientStop Color="LightBlue"
+                                          Offset="0.3"/>
+                            <GradientStop Color="Blue"
+                                          Offset="1.0"/>
+                        </RadialGradientBrush>
+                    </controls:XmasSphereControl.SphereBrush>
+                </controls:XmasSphereControl>
+
+                <controls:XmasSphereControl>
+                    <controls:XmasSphereControl.SphereBrush>
+                        <RadialGradientBrush Center="0.3,0.3">
+                            <GradientStop Color="LightCyan"
+                                          Offset="0.1"/>
+                            <GradientStop Color="Orange"
+                                          Offset="1.0"/>
+                        </RadialGradientBrush>
+                    </controls:XmasSphereControl.SphereBrush>
+                </controls:XmasSphereControl>
+
+                <controls:XmasSphereControl>
+                    <controls:XmasSphereControl.SphereBrush>
+                        <RadialGradientBrush Center="0.7,0.7">
+                            <GradientStop Color="LightGray"
+                                          Offset="0.2"/>
+                            <GradientStop Color="DarkGray"
+                                          Offset="1.0"/>
+                        </RadialGradientBrush>
+                    </controls:XmasSphereControl.SphereBrush>
+                </controls:XmasSphereControl>
+
+                <controls:XmasSphereControl>
+                    <controls:XmasSphereControl.SphereBrush>
+                        <RadialGradientBrush>
+                            <GradientStop Color="Pink"
+                                          Offset="0.5"/>
+                            <GradientStop Color="Red"
+                                          Offset="1.0"/>
+                        </RadialGradientBrush>
+                    </controls:XmasSphereControl.SphereBrush>
+                </controls:XmasSphereControl>
+
+                <controls:XmasSphereControl>
+                    <controls:XmasSphereControl.SphereBrush>
+                        <RadialGradientBrush Center="0.3,0.3">
+                            <GradientStop Color="#b9f9e5"
+                                          Offset="0.1"/>
+                            <GradientStop Color="#3ec69b"
+                                          Offset="1.0"/>
+                        </RadialGradientBrush>
+                    </controls:XmasSphereControl.SphereBrush>
+                </controls:XmasSphereControl>
+            </StackLayout>
+
+            <controls:XmasStarControl StarStroke="Goldenrod"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

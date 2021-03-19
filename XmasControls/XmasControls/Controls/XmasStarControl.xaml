@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XmasControls.Controls.XmasStarControl">
+  <ContentView.Content>
+      <StackLayout>
+            <Path StrokeThickness="3" Data="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+
+            <StackLayout.GestureRecognizers>
+                <DragGestureRecognizer CanDrag="True" DragStarting="OnDrag"/>
+            </StackLayout.GestureRecognizers>
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>
